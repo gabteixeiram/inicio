@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Kenzie</title>
+</head>
+    <body>
+        <form style="display: flex; flex-direction: column; width:200px; gap: 20px;"> 
+            <div>  
+                <label for="name"> Nome </label>
+                <input type="text" id="name" placeholder="Digite seu nome aqui" required >
+            </div>
+            <div>
+                <label for="email"> E-mail </label>
+                <input type="email" id="email" placeholder="Digite seu email aqui" required >
+            </div>    
+            <label for="textarea"> O que te motivou a participar do evento?</label> 
+                
+            <textarea placeholder=" digite aqui " required ></textarea> 
+                
+            <label> Selecione seu módulo</label>
+                
+                <select> 
+                    <option> Selecione</option>
+                    <option aria-required="true" value="opção 1"> Opção 1</option>
+                    <option aria-required="true" value="opção 2"> Opção 2</option>
+                    <option aria-required="true" value="opção 3"> Opção 3</option>
+                </select>
+                
+            <label for="senha"> Cadastre sua senha </label>  
+                    
+            <input type="password" id="senha" placeholder="Digite sua senha" required>  
+                
+            <label for="confirmarsenha"> Confirme sua senha</label>
+                
+            <input type="password" id="confirmarsenha" placeholder="Confirme sua senha" required>
+                
+            <div>
+                <label> Deseja receber novidades por email? </label>   
+
+                <div>       
+                    <label for="sim "> Sim </label>
+                    <input type="radio" id="sim" value="sim" name="novidades">    
+                    <label for="não"> Não </label> 
+                    <input type="radio" id="não" value="não" name="novidades" >
+                </div>
+            </div>
+                
+            <button type="submit"> Cadastrar </button>
+
+        </form> 
+    
+    </body>
+</html>
